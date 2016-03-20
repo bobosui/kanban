@@ -1,0 +1,8 @@
+<h3>Boards</h3>
+<div class="list-group">
+    <a ng-repeat="board in boards" class="list-group-item" ui-sref="main.board({boardId: board.id})">{{board.title}}
+        <span ng-repeat="user in board.users" class="badge">{{user.name}}</span>
+    </a>
+</div>
+
+<button type="button" ng-click="addBoard()" class="btn btn-info">Добавить доску</button>

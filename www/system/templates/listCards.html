@@ -1,0 +1,3 @@
+<div class="row card" ng-repeat="card in cards" data-card-id="{{card.id}}">
+    <div class="col-md-12"><p class="card__message" ng-click="deleteCard(card.id, listCardsId)">{{card.message}}</p></div>
+</div>

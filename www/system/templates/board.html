@@ -1,0 +1,21 @@
+<h3 ng-click="changeBoard(board.id, board.title);"><u>{{board.title}}</u></h3>
+<p>
+    <span ng-repeat="user in board.users" class="badge user" ng-click="deleteUser(board.id, user);">{{user}}</span>
+</p>
+
+<p>
+    <button type="button" ng-click="addListCards();" class="btn btn-info">Добавить список</button>
+    <button type="button" ng-click="addUser(board.id);" class="btn btn-info">Добавить пользователя</button>
+</p>
+<div class="row board">
+    <div ng-repeat="list in board.lists" class="col-md-3 list-cards" data-list-cards-id="{{list.id}}">
+        <h4 ng-click="changeListCards(list.id, list.title);"><u>{{list.title}}</u></h4>
+
+        <div list-cards cards="list.cards" list-cards-id="list.id" delete-card="deleteCard" class="list-cards__items"></div>
+        <br>
+
+        <p>
+            <button type="button" ng-click="addCard(list.id);" class="btn btn-info">Добавить запись</button>
+        </p>
+    </div>
+</div>

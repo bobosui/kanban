@@ -1,0 +1,45 @@
+#right-top-menu {
+    padding: 15px;
+    position: fixed;
+}
+
+#masthead {
+    min-height: 199px;
+}
+
+#masthead h1 {
+    font-size: 55px;
+    line-height: 1;
+    margin-top: 50px;
+}
+
+#masthead .well {
+    margin-top: 31px;
+    min-height: 127px;
+}
+
+.board {
+
+}
+
+.list-cards {
+    border: 1px solid #000;
+    padding: 10px;
+}
+
+.list-cards__items {
+    border: 1px solid #cacaca;
+    padding: 2px;
+}
+
+.card__message {
+    border: 1px solid #000;
+}
+
+.card__message:hover {
+    background-color: red;
+}
+
+.user:hover {
+    background-color: red;
+}
