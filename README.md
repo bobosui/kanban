@@ -89,7 +89,7 @@ Python 3.5 см. requirements.txt
 server {
     listen 80;
     charset utf-8;
-    root /home/rey/web/python/kanban/www;
+    root /path/to/kanban/www;
     server_name www.kanban.local;
     index index.html;
     client_max_body_size 5M;
